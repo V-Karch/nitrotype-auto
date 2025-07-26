@@ -11,7 +11,7 @@ def main():
         config = yaml.safe_load(f)
     
     driver = webdriver.Firefox()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(15)
     driver.get("https://nitrotype.com/")
 
     log_in_button = driver.find_element(By.XPATH, "/html/body/div/div/header/div/div/a[3]")
